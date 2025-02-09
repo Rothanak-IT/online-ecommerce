@@ -18,9 +18,6 @@ use Illuminate\Support\Facades\PostController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('post',function(){
-    return view('post',[PostController::class,'list'])->name('post.list');
-});
 Route::get('/', [TransaksiController::class, 'index'])->name('home');
 Route::POST('/addTocart', [TransaksiController::class, 'addTocart'])->name('addTocart');
 Route::POST('/storePelanggan', [UserController::class, 'storePelanggan'])->name('storePelanggan');

@@ -1,5 +1,4 @@
 @extends('admin.layout.index')
-
 @section('content')
     <div class="d-flex flex-wrap gap-3">
         <div class="card" style="width: 250px;">
@@ -51,9 +50,9 @@
         </div>
     </div>
 
-    <!-- <div class="card mt-2">
+    <div class="card mt-2">
         <canvas id="myChart" style="height: 50vh;"></canvas>
-    </div> -->
+    </div>
 
     <div class="row gap-2">
         <div class="col-12 col-md-6 col-lg-4">
