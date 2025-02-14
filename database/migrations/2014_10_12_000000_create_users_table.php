@@ -17,14 +17,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('is_admin')->default(1);
-            $table->boolean('is_mamber')->default(1);
-            $table->string('foto')->default('default.png');
-            $table->string('alamat');
-            $table->string('tlp');
-            $table->date('tglLahir');
-            $table->boolean('is_active')->default(1);
-            $table->integer('role');
             $table->rememberToken();
             $table->timestamps();
         });
