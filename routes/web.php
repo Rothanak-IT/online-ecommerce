@@ -2,7 +2,9 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\MidtermController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +27,5 @@ Route::get('midterm',[MidtermController::class,'midterm']);
 Route::get('dashboard',[dashboardController::class,'dashboard']);
 Route::get('product',[ProductController::class,'product']);
 Route::get('category',[CategoryController::class,'category']);
+Route::get('user',[UserController::class,'user']);
+Route::get('order',[OrderController::class,'order']);

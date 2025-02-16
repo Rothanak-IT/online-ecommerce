@@ -24,7 +24,10 @@
             <i class="fas fa-dolly"></i>
             Orders
         </a>
-        
+        <a href="orderList" class="dashboard-nav-item">
+            <i class="fas fa-dolly"></i>
+            Users
+        </a>
         <div class='dashboard-nav-dropdown'>
             <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
                 <i class="fas fa-money-check-alt"></i>
