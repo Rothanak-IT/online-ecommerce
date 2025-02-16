@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\MidtermController;
 use App\Http\Controllers\ProductController;
@@ -21,6 +22,6 @@ use Illuminate\Support\Facades\Route;
 
 // });
 Route::get('midterm',[MidtermController::class,'midterm']);
-
 Route::get('dashboard',[dashboardController::class,'dashboard']);
 Route::get('product',[ProductController::class,'product']);
+Route::get('category',[CategoryController::class,'category']);

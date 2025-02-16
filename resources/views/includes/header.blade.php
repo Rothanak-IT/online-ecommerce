@@ -16,6 +16,10 @@
                 Products
             </a>
         </div>
+        <a href="/category" class="dashboard-nav-item">
+            <i class="fas fa-dolly"></i>
+            Category
+        </a>
         <a href="orderList" class="dashboard-nav-item">
             <i class="fas fa-dolly"></i>
             Orders
@@ -26,23 +30,7 @@
                 <i class="fas fa-money-check-alt"></i>
                 Payments
             </a>
-            <div class='dashboard-nav-dropdown-menu'>
-                <a href="#" class="dashboard-nav-dropdown-item">
-                    All
-                </a>
-                <a href="#" class="dashboard-nav-dropdown-item">
-                    Recent
-                </a>
-                <a href="#" class="dashboard-nav-dropdown-item">
-                    Projections
-                </a>
-            </div>
         </div>
-
-        <a href="#" class="dashboard-nav-item">
-            <i class="fas fa-cogs"></i>
-            Settings
-        </a>
 
         <div class="nav-item-divider"></div>
         <a href="login" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
