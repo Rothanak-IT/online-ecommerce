@@ -1,31 +1,15 @@
 <?php
-use App\Http\Controllers\CategoryController;
+
 use App\Http\Controllers\dashboardController;
-use App\Http\Controllers\MidtermController;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\FileUploadController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('midterm');
-
-
-// });
-Route::get('midterm',[MidtermController::class,'midterm']);
+Route::get('/', [FileUploadController::class,'loadHomePage']);
+Route::post('/file-upload', [FileUploadController::class,'FileUpload'])->name('FileUpload');
+Route::get('/edit/{user}', [FileUploadController::class,'loadEditForm']);
+Route::get('/delete/{user}', [FileUploadController::class,'deleteUser']);
+Route::post('/update', [FileUploadController::class,'EditUser'])->name('EditUser');
 Route::get('dashboard',[dashboardController::class,'dashboard']);
-Route::get('product',[ProductController::class,'product']);
-Route::get('category',[CategoryController::class,'category']);
-Route::get('user',[UserController::class,'user']);
-Route::get('order',[OrderController::class,'order']);
+Route::get('user', [UserController::class,'user']);
+

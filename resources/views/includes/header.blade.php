@@ -24,7 +24,7 @@
             <i class="fas fa-dolly"></i>
             Orders
         </a>
-        <a href="orderList" class="dashboard-nav-item">
+        <a href="" class="dashboard-nav-item">
             <i class="fas fa-dolly"></i>
             Users
         </a>
@@ -36,6 +36,6 @@
         </div>
 
         <div class="nav-item-divider"></div>
-        <a href="login" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+        <a href="/" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
     </nav>
 </div>
