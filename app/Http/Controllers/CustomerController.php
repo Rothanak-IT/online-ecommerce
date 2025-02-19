@@ -1,17 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Category;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('formCategory');
+        return view('customer');
     }
 
     /**
@@ -19,8 +19,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        $category = Category::orderBy('created_at', 'DESC')->get();
-        return view('category',compact('Category'));
+        $customer = Customer::orderBy('created_at', 'DESC')->get();
+        return view('Customer',compact('Customer'));
     }
 
     /**
@@ -28,8 +28,8 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        Category::create($request->all());
-        return redirect()->route('Category')->with('success','successfully');
+        Customer::create($request->all());
+        return redirect()->route('Customer')->with('success','successfully');
     }
 
     /**
@@ -45,8 +45,7 @@ class CategoryController extends Controller
      */
     public function edit(string $id)
     {
-        // $category = Category::findOrFail($id);
-        // return view('category.edit', compact('category'));
+        //
     }
 
     /**
@@ -62,8 +61,6 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        // $category = Category::findOrFail($id);
-        // $category->delete();
-        // return view('category', compact('category'));
+        //
     }
 }

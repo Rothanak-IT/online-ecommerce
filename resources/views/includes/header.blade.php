@@ -16,7 +16,7 @@
                 Products
             </a>
         </div>
-        <a href="/category" class="dashboard-nav-item">
+        <a href="/formCategory" class="dashboard-nav-item">
             <i class="fas fa-dolly"></i>
             Category
         </a>
