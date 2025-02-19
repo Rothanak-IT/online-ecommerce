@@ -25,9 +25,7 @@ public function boot()
     view()->composer('layouts.navbar', function ($view) {
         $view->with('product', Product::all());
     });
-    view()->composer('layouts.model', function ($view) {
-        $view->with('category', Category::all());
-    });
+   
 }
 
 }
