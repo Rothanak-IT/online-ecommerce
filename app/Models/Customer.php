@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Customer extends Model
 {
     protected $fillable = [
         'name',
-        'description',
+        'address',
+        'phone',
+        'date'
     ];
 }
