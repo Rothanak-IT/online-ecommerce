@@ -461,16 +461,20 @@
                                 <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
                                     <div
                                         style="background:#b3b3ff;padding:20px;flex:1 1 200px;display:flex;align-items:center;justify-content:center;border-radius:10px;">
-                                        <span style="font-size:20px;">👤 Total Customers:</span></div>
+                                        <span style="font-size:20px;">👤 Total Customers:</span>
+                                    </div>
                                     <div
                                         style="background:#d699ff;padding:20px;flex:1 1 200px;display:flex;align-items:center;justify-content:center;border-radius:10px;">
-                                        <span style="font-size:20px;">🛒 Total Order:</span></div>
+                                        <span style="font-size:20px;">🛒 Total Order:</span>
+                                    </div>
                                     <div
                                         style="background:#80ccff;padding:20px;flex:1 1 200px;display:flex;align-items:center;justify-content:center;border-radius:10px;">
-                                        <span style="font-size:20px;">📚 Total Products:</span></div>
+                                        <span style="font-size:20px;">📚 Total Products:</span>
+                                    </div>
                                     <div
                                         style="background:#668000;padding:20px;flex:1 1 200px;display:flex;align-items:center;justify-content:center;color:white;border-radius:10px;">
-                                        <span style="font-size:20px;">🍔 Total Category:</span></div>
+                                        <span style="font-size:20px;">🍔 Total Category:</span>
+                                    </div>
                                 </div>
 
                             </div>
@@ -507,5 +511,3 @@
 </body>
 
 </html>
-
-

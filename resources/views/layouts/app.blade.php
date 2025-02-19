@@ -9,9 +9,7 @@
 </head>
 <body>
     @include('layouts.navbar')
-    @include('layouts.model')
 <div class="container">
-       
 </div>
 </body>
 </html>

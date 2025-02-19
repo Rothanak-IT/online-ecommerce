@@ -24,7 +24,7 @@
             <i class="fas fa-dolly"></i>
             Orders
         </a>
-        <a href="" class="dashboard-nav-item">
+        <a href="/user" class="dashboard-nav-item">
             <i class="fas fa-dolly"></i>
             Users
         </a>
