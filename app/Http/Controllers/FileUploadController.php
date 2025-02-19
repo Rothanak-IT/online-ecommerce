@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
 class FileUploadController extends Controller
 {
     public function loadHomePage()
@@ -25,25 +22,20 @@ class FileUploadController extends Controller
         try {
             if ($request->file('image')) {
                 $path = $request->file('image')->store('public/images');
-
                 $url = Storage::url($path);
-
                 $newUser = new User();
                 $newUser->name = $request->name;
                 $newUser->email = $request->email;
                 $newUser->password = 'password';
                 $newUser->image = $path;
                 $newUser->save();
-
                 return redirect('/')->with('success', $url);
             }
 
         } catch (\Exception $e) {
             return redirect('/')->with('fail', $e->getMessage());
         }
-
     }
-
     public function deleteUser($id)
     {
         try {
@@ -60,8 +52,6 @@ class FileUploadController extends Controller
             return redirect('/')->with('fail', $e->getMessage());
 
         }
-
-
     }
 
     public function loadEditForm($id)
@@ -82,18 +72,14 @@ class FileUploadController extends Controller
             $path = $user->image;
             Storage::delete($path);
             $path = $request->file('image')->store('public/images');
-
             $user->update([
                 'name' => $request->name,
                 'email' => $request->email,
                 'image' => $path,
                 'password' => 'password',
             ]);
-
             return redirect('/')->with('success', 'user updated successfully');
-
         }
-
         $user->update([
             'name' => $request->name,
             'email' => $request->email,
@@ -101,6 +87,5 @@ class FileUploadController extends Controller
         ]);
 
         return redirect('/')->with('success', 'user updated successfully');
-
     }
 }
